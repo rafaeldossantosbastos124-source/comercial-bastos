@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "eyebrow": "Júlio de Castilhos · RS · BR-158",
+    "titlePlain": "Máquinas e peças agrícolas",
+    "titleHighlight": "usadas com procedência",
+    "paragraph": "Compra, venda e negociação de máquinas, implementos, plataformas e peças usadas para plantadeiras e colheitadeiras de todas as marcas. Equipamento revisado, negócio direto, sem enrolação.",
+    "whatsapp": "5555996965028"
+  },
+  "nameplate": [
+    { "label": "Segmento", "value": "Máq. Agrícolas" },
+    { "label": "Atuação", "value": "RS · Regional" },
+    { "label": "Estoque", "value": "Rotativo semanal" },
+    { "label": "Peças", "value": "Plantadeira e colheitadeira" },
+    { "label": "Contato", "value": "(55) 99696-5028" }
+  ],
+  "sobre": {
+    "eyebrow": "Quem somos",
+    "title": "Tradição em máquinas usadas na região",
+    "paragraph": "A Comercial Bastos trabalha com a compra, venda e negociação de máquinas, implementos e peças agrícolas usadas — incluindo peças de colheitadeiras de todas as marcas. Ficamos na BR-158, KM 265, saída para Cruz Alta — ponto de referência pra quem procura equipamento com procedência e preço justo.",
+    "stats": [
+      { "num": "+300", "label": "Peças em estoque" },
+      { "num": "RS", "label": "Atendimento regional" },
+      { "num": "100%", "label": "Negócio direto" },
+      { "num": "BR-158", "label": "KM 265" }
+    ],
+    "photo": "images/grade_rustica.jpg",
+    "photoTag": "Direto do pátio"
+  },
+  "categorias": [
+    { "tag": "Plataformas", "title": "Plataformas", "desc": "Plataformas de corte usadas para diferentes marcas e modelos de colheitadeira.", "photo": "images/plataforma1.jpg" },
+    { "tag": "Implementos", "title": "Grades e implementos", "desc": "Grades niveladoras, de arrasto e demais implementos de preparo de solo.", "photo": "images/grade_azul.jpg" },
+    { "tag": "Peças", "title": "Distribuidoras e peças", "desc": "Distribuidoras de adubo e semente, peças de plantadeira e de colheitadeiras de todas as marcas.", "photo": "images/distribuidora_amarela.jpg" },
+    { "tag": "Máquinas", "title": "Máquinas e carretas", "desc": "Colheitadeiras, plantadeiras e carretas graneleiras usadas e revisadas.", "photo": "images/carreta_colheitadeira.jpg" }
+  ],
+  "galeria": [
+    { "photo": "images/plataforma2.jpg", "caption": "Plataforma para colheitadeira" },
+    { "photo": "images/plataforma3.jpg", "caption": "Plataforma pronta pra transporte" },
+    { "photo": "images/peca_funil.jpg", "caption": "Funil distribuidor" },
+    { "photo": "images/rotor_nh_cr.jpg", "caption": "Rotor máquina New Holland CR" },
+    { "photo": "images/distribuidora_stara.jpg", "caption": "Distribuidora Stara Tornado 1300" },
+    { "photo": "images/plantadeira_vencetudo.jpg", "caption": "Plantadeira usada" },
+    { "photo": "images/grade_rustica.jpg", "caption": "Grade de arrasto" }
+  ],
+  "diferenciais": [
+    { "n": "01", "title": "Procedência clara", "desc": "Cada equipamento com histórico conhecido antes de ir pro pátio." },
+    { "n": "02", "title": "Preço justo", "desc": "Negociação direta, sem intermediário e sem letra miúda." },
+    { "n": "03", "title": "Estoque rotativo", "desc": "Peças e máquinas entrando toda semana — sempre vale conferir." },
+    { "n": "04", "title": "Fácil de chegar", "desc": "Localização direto na BR-158, saída pra Cruz Alta." }
+  ],
+  "contato": {
+    "address": "BR-158, KM 265 — Júlio de Castilhos/RS, saída para Cruz Alta",
+    "phone": "(55) 99696-5028",
+    "whatsapp": "5555996965028",
+    "hours": "Segunda a sábado — consulte disponibilidade pelo WhatsApp"
+  },
+  "footer": {
+    "line": "BR-158, KM 265 — Júlio de Castilhos/RS  ·  (55) 99696-5028",
+    "copyright": "© 2026 Comercial Bastos. Todos os direitos reservados."
+  }
+}
