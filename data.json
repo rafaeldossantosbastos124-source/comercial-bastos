@@ -115,6 +115,47 @@
       "status": "Disponível",
       "nome": "Trator LS H125",
       "descricao": "1600 Horas"
+    },
+    {
+      "photos": [
+        "images/WhatsApp Image 2026-08-29 at 13.507.jpeg",
+        "images/WhatsApp Image 2026-08-29 at 13.5.jpeg",
+        "images/WhatsApp Image 2026-08-29 at 13.56.07.jpeg"
+      ],
+      "status": "Disponível",
+      "nome": "Plataforma 15 Pés New Holland"
+    },
+    {
+      "photos": [
+        "images/WhatsApp Image 2026-08-29 at 14.0047.jpeg",
+        "images/WhatsApp Image 2026-08-29 at 1400.47.jpeg"
+      ],
+      "status": "Disponível",
+      "nome": "Plataforma 18 Pés SLC"
+    },
+    {
+      "photos": [
+        "images/WhatsApp Image 2026-08-29 at 1359.42.jpeg"
+      ],
+      "status": "Disponível",
+      "nome": "Plataforma 19 Pés Jonh Deere"
+    },
+    {
+      "photos": [
+        "images/WhatsApp Image 2026-08-29 at 13.54.00.jpeg",
+        "images/WhatsApp Image 2026-08-29 at 13.53.59.jpeg",
+        "images/WhatsApp Image 2026-08-29 at 13.54.00.jpeg"
+      ],
+      "status": "Disponível",
+      "nome": "Plataforma 13 Pés Massey"
+    },
+    {
+      "photos": [
+        "images/WhatsApp Image 2026-08-29 at 13.5.58.jpeg",
+        "images/WhatsApp Image 2026-08-29 at 138.58.jpeg"
+      ],
+      "status": "Disponível",
+      "nome": "Plantadeira 5 linhas Hidraulica"
     }
   ],
   "sobre": {
