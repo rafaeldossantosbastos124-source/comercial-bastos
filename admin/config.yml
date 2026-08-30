@@ -1,0 +1,105 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "images"
+
+locale: "pt"
+
+collections:
+  - name: "site"
+    label: "Site"
+    files:
+      - name: "conteudo"
+        label: "Conteúdo do site"
+        file: "data.json"
+        fields:
+
+          - label: "Início (topo do site)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Linha pequena (local)", name: "eyebrow", widget: "string" }
+              - { label: "Título — primeira parte", name: "titlePlain", widget: "string" }
+              - { label: "Título — parte destacada (verde)", name: "titleHighlight", widget: "string" }
+              - { label: "Texto de apresentação", name: "paragraph", widget: "text" }
+              - { label: "WhatsApp (só números, com DDI 55)", name: "whatsapp", widget: "string", hint: "Ex: 5555996965028" }
+
+          - label: "Ficha técnica (caixa do topo)"
+            name: "nameplate"
+            widget: "list"
+            fields:
+              - { label: "Rótulo", name: "label", widget: "string" }
+              - { label: "Valor", name: "value", widget: "string" }
+
+          - label: "Seção Quem Somos"
+            name: "sobre"
+            widget: "object"
+            fields:
+              - { label: "Linha pequena", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "paragraph", widget: "text" }
+              - { label: "Foto", name: "photo", widget: "image" }
+              - { label: "Legenda da foto", name: "photoTag", widget: "string" }
+              - label: "Números em destaque"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "Número/sigla", name: "num", widget: "string" }
+                  - { label: "Legenda", name: "label", widget: "string" }
+
+          - label: "Categorias de produtos (os 4 cartões)"
+            name: "categorias"
+            widget: "list"
+            fields:
+              - { label: "Selo (canto da foto)", name: "tag", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Descrição", name: "desc", widget: "text" }
+              - { label: "Foto", name: "photo", widget: "image" }
+
+          - label: "Estoque atual (o que você tem disponível agora)"
+            name: "estoque"
+            widget: "list"
+            default: []
+            fields:
+              - { label: "Foto", name: "photo", widget: "image" }
+              - { label: "Nome do item", name: "nome", widget: "string" }
+              - { label: "Descrição (opcional)", name: "descricao", widget: "text", required: false }
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                options: ["Disponível", "Reservado", "Vendido"]
+                default: "Disponível"
+                required: false
+
+          - label: "Galeria (fotos do pátio)"
+            name: "galeria"
+            widget: "list"
+            fields:
+              - { label: "Foto", name: "photo", widget: "image" }
+              - { label: "Legenda (opcional)", name: "caption", widget: "string", required: false }
+
+          - label: "Diferenciais (por que comprar aqui)"
+            name: "diferenciais"
+            widget: "list"
+            fields:
+              - { label: "Número", name: "n", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Descrição", name: "desc", widget: "text" }
+
+          - label: "Contato"
+            name: "contato"
+            widget: "object"
+            fields:
+              - { label: "Endereço", name: "address", widget: "string" }
+              - { label: "Telefone (formatado, pra mostrar)", name: "phone", widget: "string" }
+              - { label: "WhatsApp (só números, com DDI 55)", name: "whatsapp", widget: "string" }
+              - { label: "Horário de atendimento", name: "hours", widget: "string" }
+
+          - label: "Rodapé"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Linha de endereço/telefone", name: "line", widget: "string" }
+              - { label: "Texto de direitos autorais", name: "copyright", widget: "string" }
