@@ -156,6 +156,13 @@
       ],
       "status": "Disponível",
       "nome": "Plantadeira 5 linhas Hidraulica"
+    },
+    {
+      "photos": [
+        "images/rotor_nh_cr.jpg"
+      ],
+      "status": "Disponível",
+      "nome": "Rotor Colheitadeira CR New Holland"
     }
   ],
   "sobre": {
