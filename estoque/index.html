@@ -258,8 +258,13 @@ function b64DecodeUnicode(str) {
 async function fetchDataJson(user = null) {
   const headers = await ghHeaders(user);
   const res = await fetch(`${apiBase()}/contents/${REPO_FOLDER}/data.json?ref=${repoConfig.branch}`, { headers });
+
   if (!res.ok) {
-    if (res.status === 404) throw new Error(`Não encontrei o arquivo ${REPO_FOLDER}/data.json. Verifique se a pasta 'estoque' existe no GitHub.`);
+    if (res.status === 404) {
+      showStatus('Primeiro acesso: Criando banco de dados...', 'info');
+      await initializeDataJson(user);
+      return await fetchDataJson(user); // Tenta carregar de novo após criar
+    }
     if (res.status === 401) throw new Error('Sua sessão expirou. Clica em Entrar de novo.');
     if (res.status === 403) throw new Error('Sem permissão de escrita nesse repositório.');
     throw new Error(`Erro ao buscar data.json (${res.status})`);
@@ -268,6 +273,11 @@ async function fetchDataJson(user = null) {
   dataSha = json.sha;
   const content = b64DecodeUnicode(json.content.replace(/\n/g, ''));
   return JSON.parse(content);
+}
+
+async function initializeDataJson(user) {
+  const initialData = { estoque: [] };
+  await putDataJson(initialData, 'Inicializando banco de dados do estoque');
 }
 
 async function putDataJson(newData, message) {
